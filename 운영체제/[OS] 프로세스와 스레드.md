@@ -1,16 +1,11 @@
 # 프로세스와 스레드의 차이
 
-담당자: 강완수
-
-상태: 운영체제
-
-속성: 2022년 2월 25일 오후 3:00
-
 - 프로세스
     - 현재 실행 중인 프로그램
     - 메모리 위에 적재되어 cpu의 할당을 받을 수 있다.
     - 동적 메모리인 힙을 할당받을 수 있다.
     - 프로세스의 구조
+        - ![image](https://user-images.githubusercontent.com/58693617/156300407-969d9899-54e8-4388-a5b3-167ef0fabd58.png)
         - text(code): 일반적인 코드
         - data: 변수 및 초기화된 데이터
         - stack: 임시 데이터(함수 호출 및 로컬 변수 등)
@@ -24,6 +19,7 @@
             - 실행 순서 제어 및 다른 프로세스의 접근 제어
             - 사용자 프로세스 생성
     - 프로세스의 상태 변화
+        - ![image](https://user-images.githubusercontent.com/58693617/156300479-8dfa0537-89ed-4afa-af40-ecf9903bc873.png)
         - New: 프로그램이 메인 메모리에 할당
         - Ready: 프로그램 초기화 등 모든 준비를 마친다.
         - Running: Cpu가 프로세스를 실행한다.
@@ -53,6 +49,7 @@
         - 비동기 방식같은 느낌
         - 입출력 연산은 cpu 명령 수행 속도보다 느리기 때문에 인터럽트를 사용
         - 인터럽트 과정
+            - ![image](https://user-images.githubusercontent.com/58693617/156300549-65bc6c21-935d-4eaa-b44d-c69cb1dd4529.png)
             - A 프로세스가 system call을 통해 인터럽트를 발생시킨다.
             - cpu는 현재 상태를 A 프로세스의 PCB에 저장한다.
             - PC(Program Counter)에 다음에 실행할 명령의 주소를 저장한다.
@@ -63,6 +60,7 @@
         - 고속 장치에 들어오는 CPU에게 부담이 된다.
         - 장치와 메모리 사이의 cpu 개입을 막고 컨트롤러가 직접 데이터 전송 맡는다.
 - 스레드
+    - ![image](https://user-images.githubusercontent.com/58693617/156300668-5e0db4f6-6efc-44ee-9703-1ea708a9102b.png)
     - 프로세스 내에서 실행되는 여러 흐름의 단위
     - code, data, heap을 공유하고 stack만 따로 할당받는다.
     - 스레드는 같은 힙을 공유한다.
