@@ -11,6 +11,7 @@
     - 메모리 위에 적재되어 cpu의 할당을 받을 수 있다.
     - 동적 메모리인 힙을 할당받을 수 있다.
     - 프로세스의 구조
+        - ![image](https://user-images.githubusercontent.com/58693617/156300407-969d9899-54e8-4388-a5b3-167ef0fabd58.png)
         - text(code): 일반적인 코드
         - data: 변수 및 초기화된 데이터
         - stack: 임시 데이터(함수 호출 및 로컬 변수 등)
@@ -24,6 +25,7 @@
             - 실행 순서 제어 및 다른 프로세스의 접근 제어
             - 사용자 프로세스 생성
     - 프로세스의 상태 변화
+        - ![image](https://user-images.githubusercontent.com/58693617/156300479-8dfa0537-89ed-4afa-af40-ecf9903bc873.png)
         - New: 프로그램이 메인 메모리에 할당
         - Ready: 프로그램 초기화 등 모든 준비를 마친다.
         - Running: Cpu가 프로세스를 실행한다.
@@ -53,6 +55,7 @@
         - 비동기 방식같은 느낌
         - 입출력 연산은 cpu 명령 수행 속도보다 느리기 때문에 인터럽트를 사용
         - 인터럽트 과정
+            - ![image](https://user-images.githubusercontent.com/58693617/156300549-65bc6c21-935d-4eaa-b44d-c69cb1dd4529.png)
             - A 프로세스가 system call을 통해 인터럽트를 발생시킨다.
             - cpu는 현재 상태를 A 프로세스의 PCB에 저장한다.
             - PC(Program Counter)에 다음에 실행할 명령의 주소를 저장한다.
