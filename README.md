@@ -16,3 +16,11 @@
 여섯번째. 매일 평일 30분 이상 조깅 어길 시 다음날 주제 하나 더 하기.
 
 일곱번째. 단순 복붙 금지
+
+
+|                | Jacob  | Potter  | Frank | Jason | 
+|----------------|:--------------:|:--------------:|:--------------:|:--------------:|
+| **Github**     |[<img src="https://avatars.githubusercontent.com/u/46801877?v=4" width="200px;" alt=""/>](https://github.com/Supreme-YS) | [<img src="https://avatars.githubusercontent.com/u/72914519?v=4" width="200px;" alt=""/>](https://github.com/jhdl0157) | [<img src="https://avatars.githubusercontent.com/u/58693617?v=4" width="200px;" alt=""/>](https://github.com/dhkstnaos) | [<img src="https://avatars.githubusercontent.com/u/54395509?v=4" width="200px;" alt=""/>](https://github.com/lovelyAlien) | 
+| **E-mail**     | dudtjr1225@gmail.com | jhdl0157@naver.com | dhkstnaos@gmail.com | jaeseung425@gmail.com  | 
+| **Github**     | https://github.com/Supreme-YS  | https://github.com/jhdl0157 | https://github.com/dhkstnaos | https://github.com/lovelyAlien| 
+| **Blog**       | https://supreme-ys.tistory.com/ |https://thisisthat-it.tistory.com/ | https://crazy-horse.tistory.com/ |https://lovelyalien.tistory.com/| 
