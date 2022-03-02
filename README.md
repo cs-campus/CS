@@ -2,7 +2,9 @@
 
 ### 💻 CS 스터디 규칙
 ---
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/72914519/156377673-4749d509-2bc7-4ae4-b4a2-51cacc2d88fa.png" width="300px;" alt="logo"/>
+</p>
 첫번째. 주어진 주제에 관련된 용어는 모두 찾아온다.
 
 두번째. 설명할 수 있을 정도의 이해를 바탕으로 글을 작성한다.
