@@ -66,6 +66,7 @@
         - 고속 장치에 들어오는 CPU에게 부담이 된다.
         - 장치와 메모리 사이의 cpu 개입을 막고 컨트롤러가 직접 데이터 전송 맡는다.
 - 스레드
+    - ![image](https://user-images.githubusercontent.com/58693617/156300668-5e0db4f6-6efc-44ee-9703-1ea708a9102b.png)
     - 프로세스 내에서 실행되는 여러 흐름의 단위
     - code, data, heap을 공유하고 stack만 따로 할당받는다.
     - 스레드는 같은 힙을 공유한다.
