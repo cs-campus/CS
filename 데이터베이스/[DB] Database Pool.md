@@ -1,5 +1,4 @@
-### Database Pool
----
+# Database Pool
 
 - 데이터베이스 풀(pool)
     - Connection pool
