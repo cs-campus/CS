@@ -1,0 +1,35 @@
+- Replication
+    - 데이터베이스 서버의 복제화를 가진다는 뜻
+    - Master와 Slave DB가 있고 Master에서 Slave DB로 데이터 동기화
+    - Master는 쓰기 작업만을 처리
+    - Slave는 읽기 작업만을 처리
+    - Log 종류
+        - Binary Log: DB 변경 내용을 기록하는 Log
+        - Relay Log: Slave DB에 위치, Binary Log를 복사, 저장, 이용하는 Log
+    - 복제화를 하는 이유
+        - 데이터 손실을 막기위해
+        - Slave DB가 Master DB 장애 시 Master Db로 승격될 수 있다.
+        - 지연을 줄일 수 있다. 복제본을 지리적으로 가까운 곳에 두어 빠르게 접속할 수 있다.
+    - Replication Lag
+        - master에서 slave로 복사되는 시간을 말함
+        - 수행 시간이 길어지게 되면 데이터 일관성에 문제가 생길 수 있다.
+            - ****Synchronous replication****
+                - 쓰기 성공시 성공했다는 메시지를 보냄
+                - 데이터 일관성을 지킬 수 있다.
+                - 데이터 쓰기가 될 때까지 기다려야 하므로 시간이 오래 걸린다.
+                - 쓰기 장애가 나면 쓰기 자체가 실패가 된다.
+                - 은행,항공 시스템 사용
+            - ****Asynchronous replication****
+                - 쓰기 요청시에 master에 바로 적용 후에 성공 메시지를 보냄
+                - 쓰기가 빠르다
+                - 장애 시엔 일관성을 지키기 어렵다.
+                - 퍼포먼스가 중요할때 사용
+    - Replication 방식
+        - Single-Primary
+            - Master-Slave 방식
+        - Multi-Primary
+            - 모든 DB가 Primary로 동작하기 때문에 Read/Write 요청도 모든 DB에 전달
+    - Master 장애 발생 시 대처 방법
+        - 장애가 발생한 Master를 다시 재기동: 재기동될때까지 Write 입력이 불가능
+        - Slave DB를 Master로 승격: Master와의 데이터 정합성에서 손실이 발생할 수 있다.
+![image](https://user-images.githubusercontent.com/58693617/156773407-429541ea-51a5-42f0-893a-d38bf123b3b6.png)
