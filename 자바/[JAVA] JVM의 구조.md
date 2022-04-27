@@ -2,6 +2,7 @@
 - JVM 동작과정
     - JVM은 자바 가상 머신으로, 자바 바이트 코드를 해석하고 실행하는 역할을 합니다. 자바 코드는 JVM을 통해 실행되므로 Window, Linux와 같은 다른 OS에서도 동일하게 실행할 수 있다는 장점이 있습니다.
 
+![image](https://user-images.githubusercontent.com/72914519/165523735-3fc9311a-a018-4c80-aa1c-9c34d53057bd.png)
 
 
 1. 인간이 만든 .java파일을 바이트 코드로 변환하기 위해서 javac 컴파일러가 일을 합니다.
@@ -37,6 +38,7 @@
     - 자바 외 언어로 작성된 네이티브 코드(C,C++)를 위한 메모리 영역(JNI)
     
 
+![image](https://user-images.githubusercontent.com/72914519/165523775-eda706df-90a3-434e-8dfb-71b70cdc0896.png)
 
 
 - **Execution Engin**
